@@ -1,0 +1,20 @@
+create table arduino
+(
+	id_arduino varchar(250),
+	nama varchar(250),
+	email varchar(250),
+	password varchar(250),
+	status_pemakaian boolean,
+	status_mesin boolean, 
+	primary key (id_arduino)
+);
+
+create table koordinat
+(
+	id_koordinat bigint auto_increment,
+	id_arduino varchar(250),
+	latitude varchar(250),
+	longitude varchar(250),
+	primary key (id_koordinat)		
+);
+
